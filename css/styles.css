@@ -53,8 +53,22 @@ h3 {
 }
 
 .iphone-img {
+  position: absolute;
   width: 60%;
   transform: rotate(20deg);
+  right: 30%
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .iphone-img {
+    position: static;
+    transform: rotate(0deg);
+  }
 }
 
 /* Features Section */
@@ -62,6 +76,9 @@ h3 {
 #features {
   padding: 5% 15%;
   text-align: center;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box {
@@ -122,4 +139,24 @@ h3 {
 
 .pricing-col {
   margin-top: 3%
+}
+
+/* Call to Action Section */
+
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 3% 15%;
+  color: white;
+}
+
+/* Footer Section */
+
+#footer {
+  text-align: center;
+  padding: 3% 15%
+}
+
+.social-media-icon {
+  margin: 3% 3% 3% 0
 }
